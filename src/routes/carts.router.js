@@ -9,7 +9,6 @@ router.get('/', async (req, res) => {
     try {
 
         const carts = await newInstanceCart.readCarts()
-
         res.status(200).json( [ { carts } ] );
 
     } catch (error) {
@@ -58,7 +57,6 @@ router.post('/:cid/product/:pid', async (req, res) => {
 
         /* Se llama al metodo para añadir productos a un carrito exitente o nuevo carrito */
         const currentCart = await newInstanceCart.addProductToCart(cid, pid)
-
         res.status(200).json([{ message: 'Se añadio correctamente el producto al carrito' }, {currentCart}]);
 
     } catch (error) {
