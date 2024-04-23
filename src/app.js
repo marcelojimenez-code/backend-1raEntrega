@@ -18,5 +18,5 @@ app.use('/api/carts', cartsRouter);
 
 /* Escuchar los cambios del servidor */
 app.listen(PORT, () => {
-    console.log('Escuchando los cambios del servidor');
-});
+    console.log(`Server is running on port ${PORT}`);
+})
