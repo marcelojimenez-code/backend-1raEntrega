@@ -3,7 +3,7 @@ import productsRouter from './routes/products.router.js';
 import cartsRouter from './routes/carts.router.js';
 
 /* Definimos el puerto */
-const PORT = 8080;
+const PORT = 8080 | 3000;
 
 /* Nombramos la variable app con la función de express */
 const app = express();
